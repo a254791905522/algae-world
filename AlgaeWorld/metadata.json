@@ -1,0 +1,18 @@
+{
+  "app_name": "Algae World",
+  "subtitle": "Guide light to grow algae",
+  "bundle_id": "com.rosewood.algaeworld.game",
+  "sku": "algae-world-ios",
+  "primary_category": "Games",
+  "secondary_category": "Puzzle",
+  "content_rights": "Uses original app assets and screenshots from this project.",
+  "age_rating_notes": "No objectionable content, no user-generated content, no web access, no ads, no purchases.",
+  "promotional_text": "Move the lamp, feed algae with nutrient capsules, and complete calm cultivation puzzles offline.",
+  "description": "Algae World is an offline light-control puzzle game. Drag a lamp around a water tank to find the right position for each algae colony, then use N, P, and K nutrient capsules as the base for growth. Different algae respond to direct, refracted, filtered, or weak light, so each short level asks you to protect colony health while completing compound orders such as chlorophyll, phycocyanin, carotenoids, omega-3, antioxidants, and space nutrients. The game stores progress locally and is built for relaxed single-player sessions.",
+  "review_notes": "Algae World is a fully offline single-player game. No login is required. No network connection is required. There are no ads, in-app purchases, analytics SDKs, tracking SDKs, or third-party account services. Gameplay: tap Continue or Levels, enter a level, drag the glowing lamp to change light position, and tap N/P/K nutrient capsules to grow the correct algae for the order.",
+  "privacy_url_file": "privacy.html",
+  "support_url_file": "index.html",
+  "device_support": "iPhone only",
+  "version": "1.0",
+  "build": "1"
+}
