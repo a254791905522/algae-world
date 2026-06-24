@@ -3,16 +3,147 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=AlgaeWorld/index.html">
   <title>Algae World</title>
+  <meta name="description" content="Algae World is a calm offline light-control cultivation puzzle game for iOS. Drag the lamp, feed algae with N/P/K nutrient capsules, and complete compound orders across 50 levels.">
   <style>
-    body { margin:0; min-height:100vh; display:grid; place-items:center; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; background:#071624; color:#f3fff7; }
-    a { color:#ffd400; }
+    :root {
+      --bg:#071624; --panel:#0d273a; --panel2:#123c4d; --text:#f3fff7; --muted:#a9c9d2;
+      --green:#31cf72; --blue:#32a7df; --orange:#ff8a2a; --gold:#ffd400; --line:rgba(255,255,255,.14);
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; color:var(--text); background:radial-gradient(circle at top, #0e4e5c 0, var(--bg) 48%, #02080d 100%); }
+    a { color:var(--gold); }
+    .wrap { width:min(1120px, calc(100% - 32px)); margin:0 auto; }
+    .hero { padding:72px 0 44px; text-align:center; }
+    .badge { display:inline-flex; gap:8px; align-items:center; padding:8px 14px; border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,.08); color:var(--gold); font-weight:700; }
+    h1 { margin:22px 0 12px; font-size:clamp(44px, 8vw, 86px); line-height:.95; letter-spacing:-.06em; color:var(--green); }
+    .subtitle { margin:0 auto; max-width:760px; color:var(--muted); font-size:clamp(18px, 3vw, 24px); line-height:1.5; }
+    .intro { margin:24px auto 0; max-width:760px; color:#e7fff1; font-size:17px; line-height:1.75; }
+    .screens { padding:32px 0 48px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:20px; align-items:start; }
+    .shot-card { background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04)); border:1px solid var(--line); border-radius:28px; padding:14px; box-shadow:0 24px 60px rgba(0,0,0,.32); }
+    .shot-card img { width:100%; border-radius:20px; display:block; box-shadow:0 14px 30px rgba(0,0,0,.34); }
+    .shot-card h3 { margin:14px 6px 6px; font-size:18px; color:var(--green); }
+    .shot-card p { margin:0 6px 8px; color:var(--muted); line-height:1.45; font-size:14px; }
+    section { padding:36px 0; }
+    h2 { font-size:34px; margin:0 0 20px; letter-spacing:-.03em; color:var(--green); }
+    .feature-grid, .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+    .card { background:rgba(255,255,255,.08); border:1px solid var(--line); border-radius:24px; padding:22px; }
+    .card h3 { margin:0 0 8px; font-size:19px; color:var(--green); }
+    .card p, .card li { color:var(--muted); line-height:1.65; }
+    .info { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
+    .info div { padding:16px; border-radius:18px; background:rgba(255,255,255,.07); border:1px solid var(--line); }
+    .label { color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+    .value { margin-top:5px; font-weight:800; }
+    footer { padding:36px 0 52px; text-align:center; color:var(--muted); border-top:1px solid var(--line); margin-top:40px; }
   </style>
 </head>
 <body>
   <main>
-    <p><a href="AlgaeWorld/index.html">Open Algae World</a></p>
+    <header class="hero">
+      <div class="wrap">
+      <div class="badge">Offline Light-Control Cultivation Puzzle</div>
+      <h1>Algae World</h1>
+      <p class="subtitle">Move the lamp, feed algae with nutrient capsules, and keep each colony in the right light zone.</p>
+      <p class="intro">Algae World is a single-player cultivation puzzle where light position, algae species, and N/P/K capsules work together. Each level asks you to protect colony health, grow the right algae, and complete compound orders before time runs out.</p>
+      </div>
+    </header>
+
+    <section class="screens wrap">
+      <div class="grid">
+        <div class="shot-card">
+          <img src="screenshots_65/05_main_menu.png" alt="Algae World main menu">
+          <h3>Main Menu</h3>
+          <p>Algae World title with Play, Levels, and Settings buttons over a deep-sea algae backdrop.</p>
+        </div>
+        <div class="shot-card">
+          <img src="screenshots_65/01_gameplay_light.png" alt="Algae World gameplay with light control">
+          <h3>Light Control</h3>
+          <p>Drag the lamp around the tank. Direct, refracted, filtered, and dark zones change algae efficiency and health.</p>
+        </div>
+        <div class="shot-card">
+          <img src="screenshots_65/02_nutrients_growth.png" alt="Algae World nutrient capsules and growth">
+          <h3>Nutrient Capsules</h3>
+          <p>Tap N, P, and K capsules to dissolve nutrients into the water. Each algae type prefers a different nutrient.</p>
+        </div>
+        <div class="shot-card">
+          <img src="screenshots_65/03_multi_algae_order.png" alt="Algae World multi-algae compound order">
+          <h3>Compound Orders</h3>
+          <p>Grow the right algae to synthesize chlorophyll, phycocyanin, phycoerythrin, carotenoid, omega-3, and more.</p>
+        </div>
+        <div class="shot-card">
+          <img src="screenshots_65/04_level_complete.png" alt="Algae World level complete screen">
+          <h3>Level Complete</h3>
+          <p>A result panel shows star rating based on algae survival rate and total population.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2>About Algae World</h2>
+      <div class="card">
+        <p>Algae World is a cultivation puzzle built on SpriteKit. You control a light source that illuminates a tank of algae colonies. Each algae species responds to light differently: green algae thrives in direct light with nitrogen, cyanobacteria prefers refracted light with phosphorus, red algae uses potassium under filtered light, and golden algae balances all three nutrients.</p>
+        <p>The game spans 50 levels across five phases. Phase 1 (L1&ndash;L10) introduces green algae and chlorophyll orders. Phase 2 (L11&ndash;L20) adds cyanobacteria and phycocyanin. Phase 3 (L21&ndash;L30) brings red and golden algae with phycoerythrin, carotenoid, omega-3, and antioxidant orders. Phase 4 (L31&ndash;L40) introduces day/night cycles with oxygen pressure and biodiesel synthesis. Phase 5 (L41&ndash;L50) is the space cultivator challenge culminating in SpaceNutrient synthesis.</p>
+        <p>Each level lasts 30 seconds. Nutrients decay exponentially based on half-life, so you must time capsule taps carefully. Over-illumination and nutrient overload can harm colonies. Star ratings reward survival rate and total population: three stars for 80% survival and full target population, two stars for 50% survival and half target, one star for any survivors.</p>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2>How to Play</h2>
+      <div class="features">
+        <div class="card">
+          <h3>1. Move the Lamp</h3>
+          <p>Drag the light source around the tank. Watch the HUD: the LIGHT chip shows whether each algae is in GOOD, FED, or OVER-lit state. Keep algae in the optimal zone to maintain health.</p>
+        </div>
+        <div class="card">
+          <h3>2. Feed Nutrients</h3>
+          <p>Tap N, P, or K capsules at the bottom to inject nutrients. Green algae uses N, cyanobacteria uses P, red algae uses K, and golden algae likes balanced N/P/K. Nutrients decay over time.</p>
+        </div>
+        <div class="card">
+          <h3>3. Watch Oxygen</h3>
+          <p>Algae produce oxygen during photosynthesis. In day/night levels (Phase 4+), oxygen drops at night. Keep the oxygen bar above zero to avoid colony damage.</p>
+        </div>
+        <div class="card">
+          <h3>4. Complete Orders</h3>
+          <p>Each level has a target compound. Grow the right algae type to synthesize the compound and fill the order meter before time runs out.</p>
+        </div>
+        <div class="card">
+          <h3>5. Earn Stars</h3>
+          <p>Three stars: 80% survival and full target population. Two stars: 50% survival and half target. One star: any survivors. Zero stars if all algae die.</p>
+        </div>
+        <div class="card">
+          <h3>6. Explore 50 Levels</h3>
+          <p>Progress through five phases: green algae basics, cyanobacteria partnership, red and golden algae, day/night oxygen cycles, and the final space cultivator challenge.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2>Support</h2>
+      <div class="feature-grid">
+        <div class="card"><h3>How do I play?</h3><p>Drag the lamp to illuminate algae, tap N/P/K capsules to feed nutrients, and complete the compound order before time runs out while keeping colony health above zero.</p></div>
+        <div class="card"><h3>Does it need internet?</h3><p>No. Algae World is an offline single-player game with all progress saved locally on your device.</p></div>
+        <div class="card"><h3>Need help?</h3><p>After release, contact support through the Algae World App Store product page.</p></div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2>App Information</h2>
+      <div class="info">
+        <div><span class="label">Genre</span><div class="value">Games / Puzzle</div></div>
+        <div><span class="label">Compatibility</span><div class="value">iOS 15.0 or later</div></div>
+        <div><span class="label">Device Support</span><div class="value">iPhone only</div></div>
+        <div><span class="label">Age Rating</span><div class="value">4+</div></div>
+        <div><span class="label">Version</span><div class="value">1.0</div></div>
+        <div><span class="label">Language</span><div class="value">English</div></div>
+        <div><span class="label">Privacy</span><div class="value">No data collected</div></div>
+        <div><span class="label">Bundle ID</span><div class="value">com.rosewood.algaeworld.game</div></div>
+      </div>
+    </section>
   </main>
+  <footer>
+    <div>&copy; 2026 Algae World. All rights reserved.</div>
+    <div><a href="/privacy.html">Privacy Policy</a></div>
+  </footer>
 </body>
 </html>

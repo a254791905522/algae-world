@@ -14,13 +14,14 @@ Gameplay fact card:
 - Monetization and network: offline, no ads, no in-app purchases, no account, no analytics, no tracking.
 
 App Store screenshot sets:
-- screenshots-1284x2778
-- screenshots-1242x2208
+- screenshots_65 (1284x2778, 6.5" display)
+- screenshots_55 (1242x2208, 5.5" display)
 
 Release files:
 - index.html
 - privacy.html
 - appstore-review-text.html
 - keywords.txt
-- metadata.json
+- GAMEPLAY_FACT_CARD.md
 - PUBLISH_CHECKLIST.md
+- README.md (this file)
